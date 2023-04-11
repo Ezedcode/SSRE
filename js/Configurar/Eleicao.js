@@ -1,7 +1,10 @@
 import Candidato from './Candidato.js';
 
+class ELeicao {
+    constructor(tipo) {
+        this.tipo = tipo;
+        this.candidatos = [];
+        this.votantes = [];
+    }
 
-const c = new Candidato("zedino", 21, "iwekdrbiasb3554454");
-
-
-console.log(c.getName());
+}

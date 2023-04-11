@@ -1,20 +1,13 @@
-class Candidato {
-    constructor(name, age, BI) {
-        this.name = name;
-        this.age = age;
-        this.BI = BI;
+import Votante from './Votante.js';
+
+export class Candidato extends Votante {
+    constructor(name, age, BI, namePartido) {
+        super(name, age, BI);
+        this.namePartido = namePartido;
     }
 
-    getName() {
-        return this.name;
-    }
-
-    getAge() {
-        return this.age;
-    }
-
-    getBI() {
-        return this.BI;
+    getNamePartido() {
+        return this.namePartido;
     }
 }
 
