@@ -1,3 +1,21 @@
+ul {
+    margin-top: 20px;
+}
+
+
+li {
+    width: 20vw;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+li:hover {
+    background: rgba(3, 3, 3, 0.596);
+}
+
+
+
 body {
     display: flex;
 }
@@ -38,18 +56,6 @@ body {
     font-weight: bolder;
 }
 
-ul {
-    margin-top: 20px;
-}
-
-
-li {
-    width: 20vw;
-    text-align: center;
-    padding: 10px 0;
-    cursor: pointer;
-}
-
-li:hover {
-    background: rgba(3, 3, 3, 0.596);
+.container div {
+    display: none;
 }

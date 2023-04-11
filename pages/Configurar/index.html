@@ -13,16 +13,23 @@
 <body>
     <div class="side-bar">
         <ul>
-            <li>Lista de Candidatos</li>
-            <li>Registrar Candidato</li>
-            <li>Registrar Eleitor</li>
-            <li>lista de Eleitores</li>
+            <li onclick="showLCandidato()">Lista de Candidatos</li>
+            <li onclick="showLEleitor()">Lista de Eleitores</li>
+            <li onclick="showRCandidato()">Registrar Candidato</li>
+            <li onclick="showREleitor()">Registrar Eleitor</li>
         </ul>
         <a href="" id="gerir">
             <input type="submit" value="Gerir Processo Eleitoral">
         </a>
     </div>
-    <div class="container"></div>
+    <div class="container">
+        <div id="lista-candidatos">Lista de Candidatos</div>
+        <div id="lista-eleitores">Lista de Eleitores</div>
+        <div id="registrar-candidato">Registrar Candidato</div>
+        <div id="registrar-eleitor">Registrar Eleitor</div>
+        <div id="lista-eleitores">Lista de Eleitores</div>
+    </div>
+    <script src="../../js/Configurar/Menu.js"></script>
     <script src="../../js/Configurar/Eleicao.js" type="module"></script>
 </body>
 
