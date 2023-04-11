@@ -1,20 +1,31 @@
 export class Votante {
-    constructor(name, age, BI) {
+    constructor(name, dataNas, genero, BI, NIF, endereco) {
         this.name = name;
-        this.age = age;
+        this.dataNas = dataNas;
         this.BI = BI;
+        this.genero = genero;
+        this.NIF = NIF;
+        this.endereco = endereco;
     }
 
     getName() {
         return this.name;
     }
 
-    getAge() {
-        return this.age;
+    getDataNas() {
+        return this.dataNas;
     }
 
     getBI() {
         return this.BI;
+    }
+
+    getGenero() {
+        return this.genero;
+    }
+
+    getNIF() {
+        return this.NIF;
     }
 }
 
