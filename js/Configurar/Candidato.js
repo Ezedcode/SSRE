@@ -1,6 +1,4 @@
-import Votante from './Votante.js';
-
-export class Candidato {
+class Candidato {
     constructor(name, dataNas, genero, BI, NIF, profissao, partido) {
         this.name = name;
         this.dataNas = dataNas;

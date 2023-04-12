@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/configurar.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="side-bar">
+        <ul>
+            <li onclick="showLCandidato()">Lista de Candidatos</li>
+            <li onclick="showLEleitor()">Lista de Eleitores</li>
+            <li onclick="showRCandidato()">Registrar Candidato</li>
+            <li onclick="showREleitor()">Registrar Eleitor</li>
+        </ul>
+        <a href="" id="gerir">
+            <input type="submit" value="Gerir Processo Eleitoral">
+        </a>
+    </div>
+    <div class="container">
+        <div id="lista-candidatos">
+            Ezedélio
+        </div>
+        <div id="lista-eleitores">Lista de Eleitores</div>
+        <div id="registrar-candidato">
+            <form action="submit">
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" placeholder="Digite o nome" id="nome">
+                </div>
+                <div>
+                    <label for="data-nascimento">Data de nascimento</label>
+                    <input type="date" id="data-nascimento">
+                </div>
+                <div>
+                    <label for="bi">BI</label>
+                    <input type="text" id="bi">
+                </div>
+                <div class="checkbox">
+                    <input type="radio" id="male" name="gender" checked>
+                    <label for="male">Homen</label><br>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Mulher</label>
+                </div>
+                <div>
+                    <label for="nif">NIF</label>
+                    <input type="text" id="nif">
+                </div>
+                <div class="checkbox">
+                    <input type="radio" id="mpla" name="partido" checked>
+                    <label for="mpla">MPLA</label><br>
+                    <input type="radio" id="unita" name="partido">
+                    <label for="unita">UNITA</label><br>
+                    <input type="radio" id="fnla" name="partido">
+                    <label for="fnla">FNLA</label>
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="number" id="phone">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+                <div>
+                    <label for="profissao">Profissão</label>
+                    <input type="text" id="profissao">
+                </div>
+                <input type="submit" value="Cadastrar">
+            </form>
+        </div>
+        <div id="registrar-eleitor">Registrar Eleitor</div>
+        <div id="lista-eleitores">Lista de Eleitores</div>
+    </div>
+    <script src="../../js/Configurar/Menu.js"></script>
+    <script src="../../js/Configurar/Eleicao.js" type="module"></script>
+</body>
+
+</html>
