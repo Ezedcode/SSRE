@@ -43,10 +43,6 @@ export class Candidato {
     getProfissao() {
         return this.profissao;
     }
-
-    getNamePartido() {
-        return this.namePartido;
-    }
 }
 
 
