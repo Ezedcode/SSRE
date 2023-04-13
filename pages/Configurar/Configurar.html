@@ -39,9 +39,9 @@
                         <input type="text" id="bi">
                     </div>
                     <div class="">
-                        <input type="radio" id="male" name="gender" checked>
+                        <input type="radio" class="gender" name="gender" checked>
                         <label for="male">Homen</label><br>
-                        <input type="radio" id="female" name="gender">
+                        <input type="radio" class="gender" name="gender">
                         <label for="female">Mulher</label>
                     </div>
                     <div>
@@ -49,11 +49,11 @@
                         <input type="text" id="nif">
                     </div>
                     <div class="form-candidato">
-                        <input type="radio" id="mpla" name="partido" checked>
+                        <input type="radio" id="mpla" name="partido" class="partido" checked>
                         <label for="mpla">MPLA</label><br>
-                        <input type="radio" id="unita" name="partido">
+                        <input type="radio" id="unita" name="partido" class="partido">
                         <label for="unita">UNITA</label><br>
-                        <input type="radio" id="fnla" name="partido">
+                        <input type="radio" id="fnla" name="partido" class="partido">
                         <label for="fnla">FNLA</label>
                     </div>
                     <div class="form-candidato">
@@ -74,9 +74,9 @@
                     </div>
                 </form>
             </div>
-            <div id="lista"></div>
+            <ul id="lista-eleitos"></ul>
+            <ul id="lista-candidatos"></ul>
         </div>
-
         <script src="../../js/Configurar/Menu.js"></script>
         <script src="../../js/Configurar/Main.js" type="module"></script>
 </body>

@@ -1,45 +1,20 @@
 class Candidato {
-    constructor(name, dataNas, genero, BI, NIF, profissao, partido) {
+    constructor(name, dataNas, BI, NIF, email, phone, profissao) {
         this.name = name;
         this.dataNas = dataNas;
         this.BI = BI;
-        this.genero = genero;
         this.NIF = NIF;
-        this.partido = partido;
-        this.contato = cotato;
+        this.email = email;
+        this.phone = phone;
         this.profissao = profissao;
     }
 
-    getName() {
-        return this.name;
+    setPartido(partido) {
+        this.partido = partido;
     }
 
-    getDataNas() {
-        return this.dataNas;
-    }
-
-    getBI() {
-        return this.BI;
-    }
-
-    getGenero() {
-        return this.genero;
-    }
-
-    getNIF() {
-        return this.NIF;
-    }
-
-    getPartido() {
-        return this.partido;
-    }
-
-    getCotato() {
-        return this.contato;
-    }
-
-    getProfissao() {
-        return this.profissao;
+    setGender(genero) {
+        this.genero = genero;
     }
 }
 

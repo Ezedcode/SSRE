@@ -2,15 +2,18 @@ let menu_candidato = document.getElementById("menu-candidato");
 let menu_eleitor = document.getElementById("menu-eleitor");
 
 let form_candidato = document.querySelectorAll(".form-candidato");
-//let form_eleitor = document.querySelector(".form-eleitor");
 
 let candidatos = document.getElementById("candidatos");
 let eleitores = document.getElementById("eleitores");
 
 let form = document.querySelector(".form");
 
+let lista_eleitores = document.getElementById("lista-eleitos");
+let lista_candidatos = document.getElementById("lista-candidatos");
+
 menu_eleitor.classList.add("active");
 candidatos.style.display = "none";
+lista_candidatos.style.display = "none";
 
 form_candidato.forEach((element) => {
     element.style.display = "none";
@@ -25,7 +28,8 @@ const showEleitores = () => {
         element.style.display = "none";
     });
     form.style.display = "none";
-    //form_eleitor.style.display = "block";
+    lista_eleitores.style.display = "block";
+    lista_candidatos.style.display = "none";
 }
 
 const showCandidatos = () => {
@@ -37,7 +41,8 @@ const showCandidatos = () => {
         element.style.display = "block";
     });
     form.style.display = "none";
-    //form_eleitor.style.display = "none";
+    lista_eleitores.style.display = "none";
+    lista_candidatos.style.display = "block";
 }
 
 const showForm = () => {
