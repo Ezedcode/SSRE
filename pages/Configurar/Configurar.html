@@ -22,8 +22,10 @@
     </div>
     <div class="container">
         <div>
-            <input type="submit" onclick="showForm()" value="Cadastrar Eleitor" class="btn" id="eleitores">
-            <input type="submit" onclick="showForm()" value="Cadastrar Candidato" class="btn" id="candidatos">
+            <div>
+                <input type="submit" onclick="showForm()" value="Cadastrar Eleitor" class="btn" id="eleitores">
+                <input type="submit" onclick="showForm()" value="Cadastrar Candidato" class="btn" id="candidatos">
+            </div>
             <div class="form">
                 <form action="./Configurar.html">
                     <div>
@@ -74,8 +76,8 @@
                     </div>
                 </form>
             </div>
-            <ul id="lista-eleitos"></ul>
-            <ul id="lista-candidatos"></ul>
+            <ul class="lista" id="lista-eleitos"></ul>
+            <ul class="lista" id="lista-candidatos"></ul>
         </div>
         <script src="../../js/Configurar/Menu.js"></script>
         <script src="../../js/Configurar/Main.js" type="module"></script>
