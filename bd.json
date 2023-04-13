@@ -1,9 +1,4 @@
 {
-  "candidato": [
-    {
-      "id": 1,
-      "nome": "Zedino"
-    }
-  ],
+  "candidato": [],
   "eleitor": []
 }

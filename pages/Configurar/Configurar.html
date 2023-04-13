@@ -28,7 +28,7 @@
                 <form action="./Configurar.html">
                     <div>
                         <label for="nome">Nome</label><br>
-                        <input type="text" id="name">
+                        <input type="text" id="nome">
                     </div>
                     <div>
                         <label for="data-nascimento">Data de nascimento</label><br>
@@ -69,14 +69,16 @@
                         <input type="text" id="profissao">
                     </div>
                     <div class="btn-form">
-                        <input type="submit" value="Cancelar" class="btn btn-cancelar">
-                        <input type="submit" value="Cadastrar" class="btn">
+                        <input type="submit" value="Cancelar" class="btn" id="btn-cancelar">
+                        <input type="submit" value="Cadastrar" class="btn" id="btn-cadastrar">
                     </div>
                 </form>
             </div>
+            <div id="lista"></div>
         </div>
+
         <script src="../../js/Configurar/Menu.js"></script>
-        <script src="../../js/Configurar/Eleicao.js" type="module"></script>
+        <script src="../../js/Configurar/Main.js" type="module"></script>
 </body>
 
 </html>
