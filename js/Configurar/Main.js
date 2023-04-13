@@ -62,6 +62,12 @@ async function setEleitorBD(eleitor) {
         headers: {
             "Content-Type": "application/json",
         },
+    }).then(resp => {
+        if (resp.ok) {
+            alert('Cadastro feito com sucesso!');
+        } else {
+            alert('Falha no cadastro!');
+        }
     });
 }
 
@@ -73,6 +79,12 @@ async function setCandidatoBD(candidato) {
         headers: {
             "Content-Type": "application/json",
         },
+    }).then(resp => {
+        if (resp.ok) {
+            alert('Cadastro feito com sucesso!');
+        } else {
+            alert('Falha no cadastro!');
+        }
     });
 }
 
