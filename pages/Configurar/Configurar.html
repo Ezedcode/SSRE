@@ -21,12 +21,10 @@
         </a>
     </div>
     <div class="container">
-        <div id="eleitores">
-            Ezedélio
-        </div>
-        <div id="candidatos">
-            <input type="submit" onclick="showFormEleitor()" value="Cadastrar Candidato" class="btn">
-            <div id="form-candidato">
+        <div>
+            <input type="submit" onclick="showForm()" value="Cadastrar Eleitor" class="btn" id="eleitores">
+            <input type="submit" onclick="showForm()" value="Cadastrar Candidato" class="btn" id="candidatos">
+            <div class="form">
                 <form action="./Configurar.html">
                     <div>
                         <label for="nome">Nome</label><br>
@@ -40,7 +38,7 @@
                         <label for="bi">BI</label><br>
                         <input type="text" id="bi">
                     </div>
-                    <div class="checkbox">
+                    <div class="">
                         <input type="radio" id="male" name="gender" checked>
                         <label for="male">Homen</label><br>
                         <input type="radio" id="female" name="gender">
@@ -50,7 +48,7 @@
                         <label for="nif">NIF</label><br>
                         <input type="text" id="nif">
                     </div>
-                    <div class="checkbox">
+                    <div class="form-candidato">
                         <input type="radio" id="mpla" name="partido" checked>
                         <label for="mpla">MPLA</label><br>
                         <input type="radio" id="unita" name="partido">
@@ -58,20 +56,22 @@
                         <input type="radio" id="fnla" name="partido">
                         <label for="fnla">FNLA</label>
                     </div>
-                    <div>
+                    <div class="form-candidato">
                         <label for="phone">Phone</label><br>
                         <input type="number" id="phone">
                     </div>
-                    <div>
+                    <div class="form-candidato">
                         <label for="email">Email</label><br>
                         <input type="email" id="email">
                     </div>
-                    <div>
+                    <div class="form-candidato">
                         <label for="profissao">Profissão</label><br>
                         <input type="text" id="profissao">
                     </div>
-                    <input type="submit" value="Cancelar" class="btn btn-cancelar">
-                    <input type="submit" value="Cadastrar" class="btn">
+                    <div class="btn-form">
+                        <input type="submit" value="Cancelar" class="btn btn-cancelar">
+                        <input type="submit" value="Cadastrar" class="btn">
+                    </div>
                 </form>
             </div>
         </div>

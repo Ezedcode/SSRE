@@ -5,7 +5,6 @@ export class Votante {
         this.BI = BI;
         this.genero = genero;
         this.NIF = NIF;
-        this.endereco = endereco;
     }
 
     getName() {
