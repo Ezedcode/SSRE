@@ -29,7 +29,7 @@
             <div class="form">
                 <form action="./Configurar.html">
                     <div>
-                        <label for="nome">Nome</label><br>
+                        <label for="nome">Nome Completo</label><br>
                         <input type="text" id="nome">
                     </div>
                     <div>
@@ -40,7 +40,7 @@
                         <label for="bi">BI</label><br>
                         <input type="text" id="bi">
                     </div>
-                    <div class="">
+                    <div>
                         <input type="radio" class="gender" name="gender" checked>
                         <label for="male">Homen</label><br>
                         <input type="radio" class="gender" name="gender">
@@ -51,12 +51,8 @@
                         <input type="text" id="nif">
                     </div>
                     <div class="form-candidato">
-                        <input type="radio" id="mpla" name="partido" class="partido" checked>
-                        <label for="mpla">MPLA</label><br>
-                        <input type="radio" id="unita" name="partido" class="partido">
-                        <label for="unita">UNITA</label><br>
-                        <input type="radio" id="fnla" name="partido" class="partido">
-                        <label for="fnla">FNLA</label>
+                        <label for="partido">Partido</label><br>
+                        <input type="text" name="partido" id="partido">
                     </div>
                     <div class="form-candidato">
                         <label for="phone">Phone</label><br>
@@ -76,7 +72,7 @@
                     </div>
                 </form>
             </div>
-            <ul class="lista" id="lista-eleitos"></ul>
+            <ul class="lista" id="lista-eleitores"></ul>
             <ul class="lista" id="lista-candidatos"></ul>
         </div>
         <script src="../../js/Configurar/Menu.js"></script>

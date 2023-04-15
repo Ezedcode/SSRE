@@ -8,7 +8,7 @@ let eleitores = document.getElementById("eleitores");
 
 let form = document.querySelector(".form");
 
-let lista_eleitores = document.getElementById("lista-eleitos");
+let lista_eleitores = document.getElementById("lista-eleitores");
 let lista_candidatos = document.getElementById("lista-candidatos");
 
 menu_eleitor.classList.add("active");

@@ -1,26 +1,4 @@
 {
-  "candidato": [
-    {
-      "name": "Ezedélio Macuete Garcia",
-      "dataNas": "2023-04-20",
-      "BI": "007163045KS040",
-      "NIF": "azsdsas8899",
-      "email": "dezedeliomacuetegarcia@gmail.com",
-      "phone": "935427504",
-      "profissao": "Developer",
-      "partido": "MPLA",
-      "genero": "Homem",
-      "id": 1
-    }
-  ],
-  "eleitor": [
-    {
-      "name": "Ezedélio Macuete Garcia",
-      "dataNas": "2023-04-14",
-      "BI": "007163045KS040",
-      "NIF": "azsdsas8899",
-      "genero": "Homem",
-      "id": 1
-    }
-  ]
+  "candidato": [],
+  "eleitor": []
 }
