@@ -7,16 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/configurar.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/SideBar.css">
+    <title>Configurar Acto Eleitoral</title>
 </head>
 
 <body>
     <div class="side-bar">
         <ul>
+            <h1 id="tipo-eleicao"></h1>
             <li onclick="showEleitores()" id="menu-eleitor">Eleitores</li>
             <li onclick="showCandidatos()" id="menu-candidato">Candidatos</li>
         </ul>
-        <a href="" id="gerir">
+        <a href="./Gerir.html" id="gerir">
             <input type="submit" value="Gerir Processo Eleitoral">
         </a>
     </div>
@@ -72,8 +74,30 @@
                     </div>
                 </form>
             </div>
-            <ul class="lista" id="lista-eleitores"></ul>
-            <ul class="lista" id="lista-candidatos"></ul>
+            <div class="lista" id="lista-eleitores">
+                <table>
+                    <tr class="head">
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>BI</th>
+                        <th>Nif</th>
+                        <th>Gênero</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="lista" id="lista-candidatos">
+                <table>
+                    <tr class="head">
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>BI</th>
+                        <th>Nif</th>
+                        <th>Partido</th>
+                        <th>Profissão</th>
+                        <th>Gênero</th>
+                    </tr>
+                </table>
+            </div>
         </div>
         <script src="../../js/Configurar/Menu.js"></script>
         <script src="../../js/Configurar/Main.js" type="module"></script>

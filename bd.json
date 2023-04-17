@@ -1,4 +1,95 @@
 {
-  "candidato": [],
-  "eleitor": []
+  "eleicao-presidencial": [
+    {
+      "votos": 0,
+      "nome": "Ezedélio Garcia",
+      "data_nascimento": "2001-04-29",
+      "bi": "5523341234SDFSD",
+      "gender": "Homem",
+      "nif": "SDFAFS45454656",
+      "partido": "FNLA",
+      "phone": "5555",
+      "email": "garcia@gmail.com",
+      "profissao": "Developer",
+      "id": 1
+    },
+    {
+      "votos": 0,
+      "nome": "Edner Mateus",
+      "data_nascimento": "",
+      "bi": "5523341234SDFSD",
+      "gender": "Homem",
+      "nif": "",
+      "partido": "",
+      "phone": "",
+      "email": "",
+      "profissao": "",
+      "id": 2
+    }
+  ],
+  "eleicao-parlamentar": [
+    {
+      "votos": 0,
+      "nome": "Ezedélio Garcia",
+      "data_nascimento": "2023-04-14",
+      "bi": "5523341234SDFSD",
+      "gender": "Homem",
+      "nif": "SDFAFS45454656",
+      "partido": "PENJANGO",
+      "phone": "45454445454",
+      "email": "garcia@gmail.com",
+      "profissao": "Developer",
+      "id": 1
+    }
+  ],
+  "eleicao-municipal": [
+    {
+      "votos": 0,
+      "nome": "António Kudiezo",
+      "data_nascimento": "2023-04-14",
+      "bi": "5523341234SDFSD",
+      "gender": "Homem",
+      "nif": "SDFAFS45454656",
+      "partido": "PENJANGO",
+      "phone": "56555646",
+      "email": "kudiezo@gmail.com",
+      "profissao": "Developer",
+      "id": 1
+    }
+  ],
+  "eleitor": [
+    {
+      "presidencial": false,
+      "parlamental": false,
+      "municipal": false,
+      "nome": "Ezedélio Garcia",
+      "data_nascimento": "1996-06-22",
+      "bi": "5523341234SDFSD",
+      "gender": "Homem",
+      "nif": "SDFAFS45454656",
+      "id": 1
+    },
+    {
+      "presidencial": false,
+      "parlamental": false,
+      "municipal": false,
+      "nome": "Zedino",
+      "data_nascimento": "2023-04-14",
+      "bi": "5523341234",
+      "gender": "Homem",
+      "nif": "SDFAFS45454",
+      "id": 2
+    },
+    {
+      "presidencial": false,
+      "parlamental": false,
+      "municipal": false,
+      "nome": "Alberto Mulonde",
+      "data_nascimento": "2023-04-12",
+      "bi": "pih9iuy9u0puj",
+      "gender": "Homem",
+      "nif": "okmokok'",
+      "id": 3
+    }
+  ]
 }

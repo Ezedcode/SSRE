@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/eleicao.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <title>Selecionar Tipo de Eleição</title>
+</head>
+
+<body>
+    <form action="./Configurar.html">
+        <fieldset>
+            <legend>Tipo de Eleição</legend>
+            <div>
+                <input type="radio" id="eleicao-presidencial" name="eleicao" value="presidencial" class="tipoEleicao"
+                    checked>
+                <label for="eleicao-presidencial">Eleição Presidencial</label>
+            </div>
+            <br>
+            <div>
+                <input type="radio" id="eleicao-parlamentar" name="eleicao" value="parlamentar" class="tipoEleicao">
+                <label for="eleicao-parlamentar">Eleição Parlamentar</label>
+            </div>
+            <br>
+            <div>
+                <input type="radio" id="eleicao-municipal" name="eleicao" value="municipal" class="tipoEleicao">
+                <label for="eleicao-municipal">Eleição Municipal</label>
+            </div>
+        </fieldset>
+        <br>
+        <input type="submit" value="Definir" id="definir">
+    </form>
+    <script src="../js/Configurar/Eleicao.js"></script>
+</body>
+
+</html>

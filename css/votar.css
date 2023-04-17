@@ -1,0 +1,82 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    color: rgb(0, 153, 255);
+}
+
+form {
+    display: flex;
+    background: rgb(0, 153, 255);
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-bottom: 5rem;
+}
+
+label {
+    font-size: bolder;
+    font-size: 20px;
+}
+
+select,
+input {
+    height: 2rem;
+    cursor: pointer;
+}
+
+input {
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    transition: .5s;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-weight: bolder;
+    background-color: rgb(30, 43, 56);
+}
+
+input:hover {
+    background-color: rgb(53, 73, 94);
+}
+
+table {
+    width: 70%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+table th {
+    padding: 10px;
+}
+
+table tr {
+    margin: 10px 0;
+    border-radius: 5px;
+    background: rgb(30, 43, 56);
+}
+
+table tr:hover {
+    cursor: pointer;
+    background: rgb(0, 153, 255);
+}
+
+table td {
+    padding: 20px;
+}
+
+table .head {
+    font-weight: bolder;
+    border-radius: 0;
+    background: rgb(43, 78, 53);
+}
+
+table .head:hover {
+    cursor: auto;
+    background: rgb(43, 78, 53);
+}

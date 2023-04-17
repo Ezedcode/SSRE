@@ -5,7 +5,19 @@
     font-family: sans-serif;
 }
 
+@keyframes animation {
+    form {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
 body {
+    font-size: 17px;
+    animation: animation 1s linear reverse;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 10, 20);
 }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/votar.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <title>Votar</title>
+</head>
+
+<body>
+    <form action="./Votar.html">
+        <label for="tipo-eleicao">Tipo de Eleição:</label>
+        <select id="tipo-eleicao" name="tipo-eleicao">
+            <option value="presidencial">Presidencial</option>
+            <option value="parlamentar">Parlamentar</option>
+            <option value="municipal">Municipal</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Definir" id="definir">
+    </form>
+    <h2 id="title">CANDIDATOS PESIDENCIAL</h2>
+    <table id="lista-candidatos">
+        <thead>
+            <tr class="head">
+                <th>Nome</th>
+                <th>Partido</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="../js/Gerir/Votar.js" type="module"></script>
+</body>
+
+</html>

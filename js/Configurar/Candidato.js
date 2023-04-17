@@ -1,4 +1,4 @@
-const url = 'http://localhost:3000/candidato';
+const url = sessionStorage.getItem("url");
 
 class Candidato {
     constructor() {
@@ -19,6 +19,8 @@ class Candidato {
 
     async setCandidatoBD() {
         const candidato = {
+            votos: 0,
+            status: false,
             nome: this.nome,
             data_nascimento: this.data_nascimento,
             bi: this.bi,
@@ -48,10 +50,43 @@ class Candidato {
     async getCandidatosBD() {
         const response = await fetch(url);
         const data = await response.json();
-        const lista = document.getElementById("lista-candidatos");
+        const lista = document.querySelector("#lista-candidatos > table");
+        const idade = (data) => {
+            let dataNas = data.split('-');
+            let dataA = new Date();
+            let dataAtual = dataA.toLocaleDateString().split('/');
+            if (parseInt(dataAtual[1]) >= parseInt(dataNas[1]) && parseInt(dataAtual[0]) >= parseInt(dataNas[2])) {
+                return parseInt(dataAtual[2]) - parseInt(dataNas[0]);
+            }
+            return parseInt(dataAtual[2]) - parseInt(dataNas[0]) - 1;
+        }
         data.forEach((element) => {
-            lista.innerHTML += `<li>${element.nome}</li>`;
-        })
+            lista.innerHTML += `
+            <tr>
+                <td>
+                    ${element.nome}
+                </td>
+                <td>
+                    ${idade(element.data_nascimento)}
+                </td>
+                <td>
+                    ${element.bi}
+                </td>
+                <td>
+                    ${element.nif}
+                </td>
+                <td>
+                    ${element.partido}
+                </td>
+                <td>
+                    ${element.profissao}
+                </td>
+                <td>
+                    ${element.gender}
+                </td>
+            </tr>
+            `;
+        });
     }
 }
 

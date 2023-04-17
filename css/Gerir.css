@@ -1,0 +1,53 @@
+#lista-processos {
+    margin-top: 7rem;
+}
+
+#lista-processos li {
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 80vw;
+}
+
+.container>div {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container>div>div:first-child {
+    align-self: end;
+}
+
+.container>div>div:first-child input {
+    padding: 15px 20px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+table th {
+    padding: 10px;
+}
+
+table tr {
+    margin: 10px 0;
+    border-radius: 5px;
+    background: rgb(30, 43, 56);
+}
+
+table td {
+    padding: 20px;
+}
+
+table .head {
+    font-weight: bolder;
+    border-radius: 0;
+    background: rgb(43, 78, 53);
+}

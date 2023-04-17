@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: end;
+}
+
+h1 {
+    position: absolute;
+    text-align: center;
+    padding: 10px 0;
+    width: 20vw;
+    top: 0;
+    left: 0;
+    background: rgb(35, 133, 163);
+}
+
+.side-bar {
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(30, 43, 56);
+}
+
+.side-bar ul {
+    margin-top: 80px;
+}
+
+
+.side-bar li {
+    width: 19vw;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.side-bar li:hover {
+    background: rgba(3, 3, 3, 0.363);
+}
+
+#menu-eleitor {
+    margin-bottom: 10px;
+}
+
+.active {
+    background: rgba(3, 3, 3, 0.596);
+}
+
+#gerir {
+    text-align: center;
+    padding: 15px 10px;
+    width: 80%;
+    cursor: pointer;
+    transition: .5s;
+    background-color: rgb(0, 153, 255);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#gerir:hover,
+.btn:hover {
+    background-color: rgba(0, 153, 255, 0.473);
+}
+
+#gerir input {
+    color: hsl(0, 0%, 100%);
+    background: none;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bolder;
+}
