@@ -7,27 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/Gerir.css">
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/SideBar.css">
-    <title>Gerir Processo Eleitoral</title>
+    <link rel="stylesheet" href="../css/status.css">
+    <title>Status das Eleições</title>
 </head>
 
 <body>
-    <div class="side-bar">
-        <h1>Gerir Processo</h1>
-        <ul id="lista-processos">
-            <li id="first">Candidatos Presidencial</li>
-            <li>Candidatos Parlamentar</li>
-            <li>Candidatos Municipal</li>
-            <li>Eleitores</li>
-        </ul>
-        <a href="./Eleicao.html" id="gerir">
-            <input type="submit" value="Gerir Processo Eleitoral">
-        </a>
-    </div>
-    <div class="container">
+    <a href="./Votar.html">Voltar</a>
+    <div class="containerS">
         <div id="tabela1">
-            <h2 id="vencedor1"></h2>
-            <input type="button" value="Declarar Vencedor">
+            <h1>Presidencial</h1>
             <table class="tabela1">
                 <tr class="head">
                     <th>Nome</th>
@@ -37,8 +25,7 @@
             </table>
         </div>
         <div id="tabela2">
-            <h2 id="vencedor2"></h2>
-            <input type="button" value="Declarar Vencedor">
+            <h1>Parlamental</h1>
             <table class="tabela2">
                 <tr class="head">
                     <th>Nome</th>
@@ -48,8 +35,7 @@
             </table>
         </div>
         <div id="tabela3">
-            <h2 id="vencedor3"></h2>
-            <input type="button" value="Declarar Vencedor">
+            <h1>Municipal</h1>
             <table class="tabela3">
                 <tr class="head">
                     <th>Nome</th>
@@ -70,7 +56,6 @@
             </table>
         </div>
     </div>
-    <script src="../js/Gerir/Menu.js"></script>
     <script src="../js/Gerir/GerirProcesso.js" type="module"></script>
 </body>
 

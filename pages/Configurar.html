@@ -32,16 +32,18 @@
                 <form action="./Configurar.html">
                     <div>
                         <label for="nome">Nome Completo</label><br>
-                        <input type="text" id="nome">
+                        <input type="text" id="nome" required="true">
                     </div>
                     <div>
                         <label for="data-nascimento">Data de nascimento</label><br>
-                        <input type="date" id="data-nascimento">
+                        <input type="date" id="data-nascimento" required="true" max="2005-01-01"
+                            oninvalid="this.setCustomValidity('Menor de Idade!')">
                     </div>
                     <div>
                         <label for="bi">BI</label><br>
-                        <input type="text" id="bi">
+                        <input type="text" id="bi" required="true">
                     </div>
+
                     <div>
                         <input type="radio" class="gender" name="gender" checked>
                         <label for="male">Homen</label><br>
@@ -50,23 +52,23 @@
                     </div>
                     <div>
                         <label for="nif">NIF</label><br>
-                        <input type="text" id="nif">
+                        <input type="text" id="nif" required="true">
                     </div>
                     <div class="form-candidato">
                         <label for="partido">Partido</label><br>
-                        <input type="text" name="partido" id="partido">
+                        <input type="text" name="partido" id="partido" required="true">
                     </div>
                     <div class="form-candidato">
                         <label for="phone">Phone</label><br>
-                        <input type="number" id="phone">
+                        <input type="number" id="phone" required="true">
                     </div>
                     <div class="form-candidato">
                         <label for="email">Email</label><br>
-                        <input type="email" id="email">
+                        <input type="email" id="email" required="true">
                     </div>
                     <div class="form-candidato">
                         <label for="profissao">Profissão</label><br>
-                        <input type="text" id="profissao">
+                        <input type="text" id="profissao" required="true">
                     </div>
                     <div class="btn-form">
                         <input type="submit" value="Cancelar" class="btn" id="btn-cancelar">

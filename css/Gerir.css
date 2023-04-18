@@ -1,3 +1,15 @@
+h2 {
+    border: 2px solid greenyellow;
+    padding: 20px;
+    margin-bottom: 50px;
+    display: none;
+    justify-content: space-between;
+}
+
+.partido-vencedor {
+    color: rgb(0, 153, 255);
+}
+
 #lista-processos {
     margin-top: 7rem;
 }
@@ -50,4 +62,19 @@ table .head {
     font-weight: bolder;
     border-radius: 0;
     background: rgb(43, 78, 53);
+}
+
+input[type="button"] {
+    padding: 10px 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    transition: .5s;
+    color: whitesmoke;
+    cursor: pointer;
+    border-radius: 10px;
+    background: rgb(0, 153, 255);
+}
+
+input[type="button"]:hover {
+    background: rgb(146, 196, 230);
 }

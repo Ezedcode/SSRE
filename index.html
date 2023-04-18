@@ -5,21 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <title>Sistema de Suporte a Eleições</title>
+    <link rel="stylesheet" href="./css/eleicao.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>SSE</title>
 </head>
 
 <body>
-    <h1>Sistema de Suporte à Realização de Eleições</h1>
-    <div class="modo-funcionamento">
-        <a href="./pages/Eleicao.html">
-            <input type="submit" value="Configurar Acto Eleitoral">
-        </a>
-        <a href="./pages/Gerir.html">
-            <input type="submit" value="Gerir Processo Eleitoral">
-        </a>
-    </div>
+    <form id="formLogin">
+        <fieldset class="fieldsetLogin">
+            <legend>Login Admin</legend>
+            <div>
+                <input type="text" id="code" placeholder="Digite o codigo" required>
+            </div>
+            <div>
+                <input type="password" id="password" placeholder="Digite password" required>
+            </div>
+            <br>
+        </fieldset>
+        <br>
+        <input type="submit" value="Login" id="btn-login-admin">
+    </form>
+    <script src="./js/Login.js" type="module"></script>
 </body>
 
 </html>

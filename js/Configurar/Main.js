@@ -8,14 +8,24 @@ let candidato = new Candidato();
 let eleitor = new Eleitor();
 
 tipo_eleicao.innerText = sessionStorage.getItem("eleicao-name").toUpperCase();
+
 btn_cadastrar.addEventListener("click", (e) => {
     e.preventDefault();
     if (candidatos.style.display == "block") {
         let candidato = new Candidato();
-        candidato.setCandidatoBD();
+        if (!candidato.validarInput())
+            alert('Por favor, preencha todos os campos!');
+        else
+            candidato.setCandidatoBD();
     } else {
         let eleitor = new Eleitor();
-        eleitor.setEleitorBD();
+        if (!eleitor.validarInput()) {
+            alert('Por favor, preencha todos os campos!');
+        }
+        else {
+            eleitor.setEleitorBD();
+        }
+
     }
 });
 

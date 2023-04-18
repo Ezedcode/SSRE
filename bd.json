@@ -1,95 +1,24 @@
 {
-  "eleicao-presidencial": [
+  "administradores": [
     {
-      "votos": 0,
-      "nome": "Ezedélio Garcia",
-      "data_nascimento": "2001-04-29",
-      "bi": "5523341234SDFSD",
-      "gender": "Homem",
-      "nif": "SDFAFS45454656",
-      "partido": "FNLA",
-      "phone": "5555",
-      "email": "garcia@gmail.com",
-      "profissao": "Developer",
-      "id": 1
+      "codigo": "ezedelio21",
+      "password": "ezed12"
     },
     {
-      "votos": 0,
-      "nome": "Edner Mateus",
-      "data_nascimento": "",
-      "bi": "5523341234SDFSD",
-      "gender": "Homem",
-      "nif": "",
-      "partido": "",
-      "phone": "",
-      "email": "",
-      "profissao": "",
-      "id": 2
-    }
-  ],
-  "eleicao-parlamentar": [
-    {
-      "votos": 0,
-      "nome": "Ezedélio Garcia",
-      "data_nascimento": "2023-04-14",
-      "bi": "5523341234SDFSD",
-      "gender": "Homem",
-      "nif": "SDFAFS45454656",
-      "partido": "PENJANGO",
-      "phone": "45454445454",
-      "email": "garcia@gmail.com",
-      "profissao": "Developer",
-      "id": 1
-    }
-  ],
-  "eleicao-municipal": [
-    {
-      "votos": 0,
-      "nome": "António Kudiezo",
-      "data_nascimento": "2023-04-14",
-      "bi": "5523341234SDFSD",
-      "gender": "Homem",
-      "nif": "SDFAFS45454656",
-      "partido": "PENJANGO",
-      "phone": "56555646",
-      "email": "kudiezo@gmail.com",
-      "profissao": "Developer",
-      "id": 1
-    }
-  ],
-  "eleitor": [
-    {
-      "presidencial": false,
-      "parlamental": false,
-      "municipal": false,
-      "nome": "Ezedélio Garcia",
-      "data_nascimento": "1996-06-22",
-      "bi": "5523341234SDFSD",
-      "gender": "Homem",
-      "nif": "SDFAFS45454656",
-      "id": 1
+      "codigo": "edner43",
+      "password": "edner34"
     },
     {
-      "presidencial": false,
-      "parlamental": false,
-      "municipal": false,
-      "nome": "Zedino",
-      "data_nascimento": "2023-04-14",
-      "bi": "5523341234",
-      "gender": "Homem",
-      "nif": "SDFAFS45454",
-      "id": 2
+      "codigo": "kudoezo56",
+      "password": "kudo65"
     },
     {
-      "presidencial": false,
-      "parlamental": false,
-      "municipal": false,
-      "nome": "Alberto Mulonde",
-      "data_nascimento": "2023-04-12",
-      "bi": "pih9iuy9u0puj",
-      "gender": "Homem",
-      "nif": "okmokok'",
-      "id": 3
+      "codigo": "alberto78",
+      "password": "alber87"
     }
-  ]
+  ],
+  "eleicao-presidencial": [],
+  "eleicao-parlamentar": [],
+  "eleicao-municipal": [],
+  "eleitor": []
 }

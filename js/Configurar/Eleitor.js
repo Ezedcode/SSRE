@@ -13,10 +13,19 @@ export class Eleitor {
         this.nif = document.getElementById('nif').value;
     }
 
+    validarInput() {
+        let value = true;
+        if (this.nome == "") value = false;
+        if (this.data_nascimento == "") value = false;
+        if (this.bi == "") value = false;
+        if (this.nif == "") value = false;
+        return value;
+    }
+
     async setEleitorBD() {
         const eleitor = {
             presidencial: false,
-            parlamental: false,
+            parlamentar: false,
             municipal: false,
             nome: this.nome,
             data_nascimento: this.data_nascimento,

@@ -27,8 +27,9 @@ definir.addEventListener("click", (e) => {
 
 const setEleitorStatusBD = async () => {
     const status1 = { presidencial: true };
-    const status2 = { parlamental: true };
+    const status2 = { parlamentar: true };
     const status3 = { municipal: true };
+
 
     // Define as opções da solicitação
     const options = {
@@ -54,7 +55,6 @@ const setEleitorStatusBD = async () => {
         });
 }
 
-
 const setVoto = async (id, votos) => {
     const voto = { votos: (votos + 1) };
 
@@ -77,6 +77,26 @@ const setVoto = async (id, votos) => {
         });
 }
 
+const verificarVotosELeitor = async () => {
+    const response = await fetch(`
+        http://localhost:3000/eleitor/${sessionStorage.getItem("idEleitor")}
+    `);
+
+    const data = await response.json();
+
+    if (sessionStorage.getItem("status") == "presidencial") {
+        if (data.presidencial)
+            return false;
+    } else if (sessionStorage.getItem("status") == "parlamentar") {
+        if (data.parlamentar)
+            return false;
+    } else {
+        if (data.municipal)
+            return false;
+    }
+
+    return true;
+}
 
 const getCandidatosBD = async (id) => {
     const response = await fetch(
@@ -86,7 +106,7 @@ const getCandidatosBD = async (id) => {
     const data = await response.json();
     const lista = document.querySelector("#lista-candidatos > tbody");
 
-    data.forEach((element) => {
+    data.forEach(async (element) => {
         const tr = document.createElement("tr");
 
         tr.innerHTML = `
@@ -100,10 +120,15 @@ const getCandidatosBD = async (id) => {
 
         tr.setAttribute("value", element.id);
         tr.setAttribute("class", "candidato");
-        tr.addEventListener("click", () => {
-            setVoto(element.id, element.votos);
-            setEleitorStatusBD();
-            alert("Candidato Escolhido!");
+        tr.addEventListener("click", async () => {
+            const verificar = await verificarVotosELeitor();
+            if (!verificar) {
+                alert("Já realizou o seu voto!");
+            } else {
+                setVoto(element.id, element.votos);
+                setEleitorStatusBD();
+                alert("Candidato Escolhido!");
+            }
         })
         lista.appendChild(tr);
     });

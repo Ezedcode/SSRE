@@ -43,13 +43,19 @@ input[type="submit"]:hover {
     background: rgba(0, 153, 255, 0.473);
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="password"] {
     width: 25rem;
     padding: 10px 5px;
     border: 2px solid rgb(0, 153, 255);
 }
 
-#btn-login {
+input[type="password"] {
+    margin-top: 50px;
+}
+
+#btn-login,
+#btn-login-admin {
     padding: 20px 205px;
 }
 

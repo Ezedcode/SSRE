@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    padding: 10px 0;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+a:hover {
+    border-bottom: 3px solid rgb(0, 153, 255);
+}
+
+
+.containerS {
+    width: 80vw;
+}
+
+.containerS h1 {
+    text-align: center;
+    border: 2px solid greenyellow;
+    padding: 20px;
+    margin: 50px 0;
+}

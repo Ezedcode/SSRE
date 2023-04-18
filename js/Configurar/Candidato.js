@@ -17,6 +17,19 @@ class Candidato {
         this.profissao = document.getElementById("profissao").value;
     }
 
+    validarInput() {
+        let value = true;
+        if (this.nome == "") value = false;
+        if (this.data_nascimento == "") value = false;
+        if (this.bi == "") value = false;
+        if (this.nif == "") value = false;
+        if (this.partido == "") value = false;
+        if (this.phone == "") value = false;
+        if (this.email == "") value = false;
+        if (this.profissao == "") value = false;
+        return value;
+    }
+
     async setCandidatoBD() {
         const candidato = {
             votos: 0,

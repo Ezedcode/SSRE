@@ -11,6 +11,8 @@ let form = document.querySelector(".form");
 let lista_eleitores = document.getElementById("lista-eleitores");
 let lista_candidatos = document.getElementById("lista-candidatos");
 
+let btn_cancelar = document.getElementById("btn-cancelar");
+
 menu_eleitor.classList.add("active");
 candidatos.style.display = "none";
 lista_candidatos.style.display = "none";
@@ -18,6 +20,10 @@ lista_candidatos.style.display = "none";
 form_candidato.forEach((element) => {
     element.style.display = "none";
 });
+
+btn_cancelar.addEventListener("click", () => {
+    form.style.display = "none";
+})
 
 const showEleitores = () => {
     menu_candidato.classList.remove("active");

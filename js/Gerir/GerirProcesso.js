@@ -66,7 +66,8 @@ const getVencedor = async (url, title) => {
     });
 
     const showVencedor = document.getElementById(title);
-    //showVencedor.innerText = `${}`;
+    showVencedor.innerHTML = `<span>Vencedor ${vencedor[0].nome}</span><span class="partido-vencedor">${vencedor[0].partido}</span>`;
+    showVencedor.style.display = "flex";
     console.log(vencedor);
 }
 
@@ -75,4 +76,13 @@ getDadosBD(url[1], ".tabela2", 1);
 getDadosBD(url[2], ".tabela3", 1);
 getDadosBD(url[3], ".tabela4", 0);
 
-getVencedor(url[0]);
+if (sessionStorage.getItem("button1")) {
+    getVencedor(url[0], "vencedor1");
+}
+if (sessionStorage.getItem("button2")) {
+    getVencedor(url[1], "vencedor2");
+}
+if (sessionStorage.getItem("button3")) {
+    getVencedor(url[2], "vencedor3");
+}
+
